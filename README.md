@@ -72,6 +72,24 @@ src/
 }
 ```
 
+## 배포
+
+이 프로젝트는 AWS를 통해 배포할 수 있습니다. 자세한 배포 가이드는 [DEPLOYMENT.md](./DEPLOYMENT.md)를 참조하세요.
+
+### 빠른 배포 (AWS Amplify)
+
+1. GitHub에 저장소를 푸시
+2. [AWS Amplify Console](https://console.aws.amazon.com/amplify)에서 새 앱 생성
+3. GitHub 저장소 연결
+4. 자동 배포 완료!
+
+### 수동 배포 (S3 + CloudFront)
+
+```bash
+npm run build
+aws s3 sync dist/ s3://your-bucket-name --delete
+```
+
 ## 라이선스
 
 © 2026 LEVELTHREE. All rights reserved.
