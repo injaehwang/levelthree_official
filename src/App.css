@@ -1,0 +1,19 @@
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth section transitions */
+section {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+}
