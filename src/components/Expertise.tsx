@@ -9,35 +9,30 @@ const Expertise = () => {
   })
 
   const coreValues = [
-    { 
-      title: 'Performance First', 
+    {
+      title: 'Performance First',
       description: '최적화된 성능으로 사용자 경험을 극대화합니다',
-      icon: '⚡',
-      color: '#f59e0b'
+      icon: '⚡'
     },
-    { 
-      title: 'AI Integration', 
+    {
+      title: 'AI Integration',
       description: 'AI 기술을 자연스럽게 통합한 혁신적인 솔루션',
-      icon: '🤖',
-      color: '#6366f1'
+      icon: '🤖'
     },
-    { 
-      title: 'Security & Protection', 
-      description: '매크로 탐지 및 봇 방지를 통한 강력한 보안 솔루션',
-      icon: '🛡️',
-      color: '#ef4444'
+    {
+      title: 'Security & Protection',
+      description: '매크로 탐지 및 봇 방지를 통한 강력한 보안',
+      icon: '🛡️'
     },
-    { 
-      title: 'Scalable Architecture', 
+    {
+      title: 'Scalable Architecture',
       description: '확장 가능하고 유지보수 가능한 아키텍처 설계',
-      icon: '🏗️',
-      color: '#ec4899'
+      icon: '🏗️'
     },
-    { 
-      title: 'User Experience', 
+    {
+      title: 'User Experience',
       description: '직관적이고 매력적인 사용자 경험 디자인',
-      icon: '✨',
-      color: '#a78bfa'
+      icon: '✨'
     },
   ]
 
@@ -52,23 +47,13 @@ const Expertise = () => {
     { name: 'Rate Limiting', icon: '⏱️', description: '요청 제한 및 보호' },
   ]
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  }
-
   const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.5,
         ease: 'easeOut',
       },
     },
@@ -76,73 +61,60 @@ const Expertise = () => {
 
   return (
     <section id="expertise" className="expertise" ref={ref}>
-      <div className="expertise-container">
+      <div className="container">
         <motion.div
           className="expertise-header"
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title">
-            Our <span className="gradient-text">Expertise</span>
-          </h2>
-          <p className="section-description">
+          <h2 className="section-title">Expertise</h2>
+          <p className="section-subtitle">
             대부분의 프론트엔드 기술에 정통한 전문가 팀
           </p>
         </motion.div>
 
         <div className="expertise-content">
-          <motion.div
-            className="values-section"
-            variants={containerVariants}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-          >
+          <div className="expertise-section">
             <h3 className="subsection-title">Core Values</h3>
-            <div className="values-list">
+            <div className="values-grid">
               {coreValues.map((value, index) => (
                 <motion.div
                   key={index}
-                  className="value-item"
+                  className="value-card"
+                  initial="hidden"
+                  animate={inView ? 'visible' : 'hidden'}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.02, x: 10 }}
+                  transition={{ delay: index * 0.1 }}
                 >
-                  <div className="value-icon" style={{ '--color': value.color } as React.CSSProperties}>
-                    {value.icon}
-                  </div>
-                  <div className="value-content">
+                  <div className="value-icon">{value.icon}</div>
+                  <div>
                     <h4 className="value-title">{value.title}</h4>
                     <p className="value-description">{value.description}</p>
                   </div>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="frameworks-section"
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
+          <div className="expertise-section">
             <h3 className="subsection-title">Frameworks & Tools</h3>
             <div className="frameworks-grid">
               {frameworks.map((framework, index) => (
                 <motion.div
                   key={index}
-                  className="framework-card"
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  className="framework-chip"
+                  initial={{ opacity: 0, scale: 0.9 }}
                   animate={inView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ delay: 0.5 + index * 0.1, type: 'spring' }}
-                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ delay: 0.3 + index * 0.05 }}
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <div className="framework-icon">{framework.icon}</div>
-                  <div className="framework-name">{framework.name}</div>
-                  <div className="framework-description">{framework.description}</div>
+                  <span className="framework-icon">{framework.icon}</span>
+                  <span className="framework-name">{framework.name}</span>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

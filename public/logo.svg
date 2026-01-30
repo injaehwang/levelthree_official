@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="33.5616 290.4105 232.1627 83.12" width="232.163px" height="83.12px" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="vGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/> 
+      <stop offset="100%" style="stop-color:#9333ea"/>
+    </linearGradient>
+  </defs>
+  <g id="object-0">
+    <g id="layer-MC0">
+      <!-- Letters L, E - Dark Black/Gray matching site text -->
+      <path id="path1" d="m 0,0 h -14.361 l -15.46,62.34 h 14.362 z" style="fill:#1d1d1f;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,73.322933,373.53053)"/>
+      <path id="path2" d="m 0,0 h -14.361 l -3.161,12.374 h 14.361 z" style="fill:#1d1d1f;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,104.17773,373.53053)"/>
+      
+      <!-- The 'V' Mark - Special Element with Gradient -->
+      <path id="path3" d="m 0,0 h -14.361 l -11.696,42.616 h 14.361 z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,133.87827,373.53053)"/>
+      <path id="path4" d="M 0,0 H 14.361 L 26.157,45.649 H 11.795 Z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,135.79813,351.27667)"/>
+      
+      <!-- Letters E, L - Dark Black/Gray matching site text -->
+      <path id="path5" d="M 0,0 H 14.361 L 30.074,62.34 H 15.712 Z" style="fill:#1d1d1f;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,161.0996,373.53053)"/>
+      <path id="path6" d="M 0,0 H 14.361 L 30.074,62.34 H 15.712 Z" style="fill:#1d1d1f;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,193.36267,373.53053)"/>
+      <path id="path7" d="M 0,0 H 14.361 L 30.074,62.34 H 15.712 Z" style="fill:#1d1d1f;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,225.6256,373.53053)"/>
+    </g>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 20)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -31,61 +31,73 @@ const Navigation = () => {
   ]
 
   return (
-    <motion.nav
-      className={`navigation ${isScrolled ? 'scrolled' : ''}`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <motion.div
+        <a
+          href="#hero"
           className="logo"
-          onClick={() => scrollToSection('hero')}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('hero')
+          }}
         >
-          <span className="logo-text">LEVEL</span>
-          <span className="logo-number">THREE</span>
-        </motion.div>
+          <img src="/logo.svg" alt="LEVELTHREE" className="logo-img" />
+        </a>
 
-        <div className="nav-links">
+        {/* Desktop Menu */}
+        <ul className="nav-links">
           {navItems.map((item) => (
-            <motion.button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              whileHover={{ y: -2 }}
-              whileTap={{ y: 0 }}
-              className="nav-link"
-            >
-              {item.label}
-            </motion.button>
+            <li key={item.id}>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection(item.id)}
+              >
+                {item.label}
+              </button>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <button
-          className="mobile-menu-toggle"
+        {/* Mobile Toggle */}
+        <div
+          className="nav-mobile-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
         >
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
-        </button>
+          <div className="bar" style={{ transform: isMobileMenuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></div>
+          <div className="bar" style={{ opacity: isMobileMenuOpen ? 0 : 1 }}></div>
+          <div className="bar" style={{ transform: isMobileMenuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></div>
+        </div>
       </div>
 
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="mobile-menu"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            className="mobile-menu-overlay"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            style={{
+              position: 'absolute',
+              top: '60px',
+              left: 0,
+              width: '100%',
+              background: 'rgba(255, 255, 255, 0.98)',
+              padding: '2rem',
+              borderBottom: '1px solid var(--border-light)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1rem',
+              alignItems: 'center',
+              boxShadow: 'var(--shadow-md)'
+            }}
           >
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="mobile-nav-link"
+                className="nav-link"
+                style={{ fontSize: '1.25rem' }}
               >
                 {item.label}
               </button>
@@ -93,7 +105,7 @@ const Navigation = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
   )
 }
 

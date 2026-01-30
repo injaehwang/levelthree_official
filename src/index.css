@@ -5,18 +5,28 @@
 }
 
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --secondary: #8b5cf6;
-  --accent: #ec4899;
-  --dark: #0f172a;
-  --dark-light: #1e293b;
-  --text: #e2e8f0;
-  --text-muted: #94a3b8;
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  --gradient-ai: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  /* Light Theme Palette - Apple/Antigravity style */
+  --primary: #111111; /* Deep Black for primary actions/text */
+  --primary-light: #333333;
+  --accent: #0071e3; /* Classic clean blue for links/highlights */
+  
+  --bg-color: #ffffff;
+  --bg-alt: #f5f5f7; /* Subtle light gray for alternating sections */
+  
+  --text-main: #1d1d1f; /* Almost black */
+  --text-secondary: #86868b; /* Gray text */
+  --text-tertiary: #6e6e73;
+  
+  --border-light: #d2d2d7;
+  
+  --spacing-section: 120px;
+  --container-width: 1200px;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
+  
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
@@ -29,9 +39,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--dark);
-  color: var(--text);
+  background-color: var(--bg-color);
+  color: var(--text-main);
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 code {
@@ -39,20 +50,86 @@ code {
     monospace;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Minimal */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--dark);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  border-radius: 5px;
+  background: #d1d1d1;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-dark);
+  background: #b0b0b0;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+/* Button Reset & Styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 980px; /* Pill shape */
+  transition: var(--transition-smooth);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  background-color: black; /* Even darker */
+}
+
+.btn-secondary {
+  background-color: var(--bg-alt);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: #e8e8ed;
 }

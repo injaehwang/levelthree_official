@@ -4,16 +4,9 @@
   min-height: 100vh;
 }
 
-/* Smooth section transitions */
+/* Ensure sections take full width but respect container centering handled inside them */
 section {
+  width: 100%;
   position: relative;
-  min-height: 100vh;
-  padding: 80px 20px;
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 60px 20px;
-  }
 }
