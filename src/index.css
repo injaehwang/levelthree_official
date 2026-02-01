@@ -6,26 +6,32 @@
 
 :root {
   /* Light Theme Palette - Apple/Antigravity style */
-  --primary: #111111; /* Deep Black for primary actions/text */
+  --primary: #111111;
+  /* Deep Black for primary actions/text */
   --primary-light: #333333;
-  --accent: #0071e3; /* Classic clean blue for links/highlights */
-  
-  --bg-color: #ffffff;
-  --bg-alt: #f5f5f7; /* Subtle light gray for alternating sections */
-  
-  --text-main: #1d1d1f; /* Almost black */
-  --text-secondary: #86868b; /* Gray text */
+  --accent: #0071e3;
+  /* Classic clean blue for links/highlights */
+
+  /* Make backgrounds semi-transparent to show the interactive background */
+  --bg-color: rgba(255, 255, 255, 0.85);
+  --bg-alt: rgba(245, 245, 247, 0.85);
+  /* Subtle light gray for alternating sections */
+
+  --text-main: #1d1d1f;
+  /* Almost black */
+  --text-secondary: #86868b;
+  /* Gray text */
   --text-tertiary: #6e6e73;
-  
+
   --border-light: #d2d2d7;
-  
+
   --spacing-section: 120px;
   --container-width: 1200px;
-  
+
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
-  
+
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -39,7 +45,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-color);
+  background-color: transparent;
+  /* Let the sections handle the background color/transparency */
   color: var(--text-main);
   overflow-x: hidden;
   line-height: 1.5;
@@ -69,7 +76,12 @@ code {
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text-main);
@@ -110,7 +122,8 @@ button {
   padding: 12px 32px;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 980px; /* Pill shape */
+  border-radius: 980px;
+  /* Pill shape */
   transition: var(--transition-smooth);
 }
 
@@ -122,7 +135,8 @@ button {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  background-color: black; /* Even darker */
+  background-color: black;
+  /* Even darker */
 }
 
 .btn-secondary {

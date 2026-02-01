@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="105 290 70 85" width="85px" height="85px">
+  <defs>
+    <linearGradient id="vGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/> 
+      <stop offset="100%" style="stop-color:#9333ea"/>
+    </linearGradient>
+  </defs>
+  <g id="object-0">
+    <g id="layer-MC0">
+      <!-- The 'V' Mark -->
+      <path id="path3" d="m 0,0 h -14.361 l -11.696,42.616 h 14.361 z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,133.87827,373.53053)"/>
+      <path id="path4" d="M 0,0 H 14.361 L 26.157,45.649 H 11.795 Z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,135.79813,351.27667)"/>
+    </g>
+  </g>
+</svg>

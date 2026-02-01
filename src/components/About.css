@@ -1,7 +1,7 @@
 .about {
   padding: var(--spacing-section) 0;
   background-color: var(--bg-alt);
-  /* Light gray background to distinguish from Hero */
+  /* using new transparent rgba var */
 }
 
 .about-header {

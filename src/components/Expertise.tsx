@@ -34,17 +34,25 @@ const Expertise = () => {
       description: '직관적이고 매력적인 사용자 경험 디자인',
       icon: '✨'
     },
+    {
+      title: '실시간 AI 자동화 플랫폼 설계',
+      description: 'CI/CD, 테스트, 디자인 시스템 연동을 통한 개발 효율성 극대화',
+      icon: '⚙️'
+    },
   ]
 
   const frameworks = [
-    { name: 'React', icon: '⚛️', description: '컴포넌트 기반 UI 개발' },
-    { name: 'Vue', icon: '🟢', description: '점진적 프레임워크' },
+    { name: 'Modern FE Architecture', icon: '✨', description: 'React, Vue 등 모던 프레임워크 기반의 고성능 아키텍처 설계' },
     { name: 'Turbo', icon: '⚡', description: '모노레포 빌드 시스템' },
     { name: 'Next.js', icon: '▲', description: '풀스택 React 프레임워크' },
     { name: 'Bot Detection', icon: '🛡️', description: '매크로 및 봇 탐지 시스템' },
     { name: 'Device Fingerprinting', icon: '🔍', description: '디바이스 식별 및 분석' },
-    { name: 'Behavioral Analysis', icon: '📊', description: '사용자 행동 패턴 분석' },
-    { name: 'Rate Limiting', icon: '⏱️', description: '요청 제한 및 보호' },
+    { name: 'CI/CD & Testing', icon: '🧪', description: '자동화된 테스트 및 배포 파이프라인 구축' },
+    { name: 'Figma to Code', icon: '🎨', description: '디자인-개발 연동 및 자동 배포 시스템' },
+    { name: 'Common Modules', icon: '📦', description: '공통 모듈 시스템 및 디자인 시스템 구축' },
+    { name: 'Monorepo Consulting', icon: '🏗️', description: '대규모 프로젝트를 위한 모노레포 전략 컨설팅' },
+    { name: 'n8n & Workflow', icon: '🔄', description: 'AI 시대의 Agile한 FE/BE 데이터 파이프라인 연동' },
+    { name: 'AI-Native Ops', icon: '🤖', description: 'LLM 기반 서비스 아키텍처 및 자동화 구현' },
   ]
 
   const itemVariants = {
@@ -70,7 +78,7 @@ const Expertise = () => {
         >
           <h2 className="section-title">Expertise</h2>
           <p className="section-subtitle">
-            대부분의 프론트엔드 기술에 정통한 전문가 팀
+            AI 모델과 사용자 사이의 인터페이스를 설계하고 데이터를 시각화하는 지능형 경험을 제공합니다.
           </p>
         </motion.div>
 

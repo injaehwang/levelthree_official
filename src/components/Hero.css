@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); Removed to let global transparent bg show */
   overflow: hidden;
   padding-top: 60px;
   /* Account for fixed header */

@@ -31,9 +31,8 @@ const Contact = () => {
   }
 
   const contactInfo = [
-    { icon: '📧', label: 'Email', value: 'contact@levelthree.com' },
-    { icon: '📱', label: 'Phone', value: '+82 10-0000-0000' },
-    { icon: '📍', label: 'Location', value: 'Seoul, South Korea' },
+    { icon: '📧', label: 'Email', value: 'thinkij@levelthree.kr' },
+    { icon: '📍', label: 'Location', value: 'Seoul' },
   ]
 
   return (
@@ -128,7 +127,7 @@ const Contact = () => {
           <div className="footer-content">
             <span className="footer-logo">LEVELTHREE</span>
             <p className="footer-text">
-              © 2026 LEVELTHREE. All rights reserved.
+              © 2019 hwang injae copyright
             </p>
           </div>
         </footer>

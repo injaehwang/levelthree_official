@@ -1,6 +1,7 @@
 .services {
   padding: var(--spacing-section) 0;
   background-color: var(--bg-color);
+  /* Now transparent */
 }
 
 .services-header {
