@@ -55,8 +55,8 @@ const InteractiveBackground = () => {
                 this.y += this.vy
 
                 // Bounce off edges
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1
+                if (this.x < 0 || this.x > canvas!.width) this.vx *= -1
+                if (this.y < 0 || this.y > canvas!.height) this.vy *= -1
 
                 // Mouse interaction (gentle repel)
                 const dx = mouse.x - this.x
