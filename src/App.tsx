@@ -16,8 +16,8 @@ function App() {
     <div className="app">
       <Helmet>
         <html lang={i18n.language} />
-        <title>LEVELTHREE - Frontend Development Experts</title>
-        <meta name="description" content={i18n.language === 'ko' ? "AI 맵 서비스, APM, Solution 전문 프론트엔드 개발 회사" : "Frontend Development Experts specializing in AI Map Services, APM, and Solutions."} />
+        <title>LEVELTHREE - Web/App & AI Security Experts</title>
+        <meta name="description" content={i18n.language === 'ko' ? "웹/앱 개발 및 서비스 개발, AI 보안 전문가" : "Web/App Development & Service Development, AI Security Experts."} />
       </Helmet>
       <InteractiveBackground />
       <Navigation />

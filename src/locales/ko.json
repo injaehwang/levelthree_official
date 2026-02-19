@@ -9,17 +9,17 @@
             "contact": "문의하기"
         },
         "hero": {
-            "subtitle": "프론트엔드 개발 전문가",
-            "description": "차세대 웹 기술로 디지털 경험을 향상시킵니다.<br/>AI 플랫폼, APM 및 고급 솔루션 전문 기업.",
+            "subtitle": "웹/앱 개발 및 서비스 개발, AI 보안 전문가",
+            "description": "차세대 기술로 디지털 경험을 향상시킵니다.<br/>AI 플랫폼, APM 및 보안 솔루션 전문 기업.",
             "cta_start": "프로젝트 시작하기",
             "cta_explore": "서비스 둘러보기",
             "scroll": "스크롤"
         },
         "about": {
             "title": "LEVELTHREE 소개",
-            "subtitle": "프론트엔드의 미래를 개척합니다",
-            "p1": "LEVELTHREE는 프론트엔드 개발 전문 회사로, AI 시대의 혁신적인 웹 솔루션을 제공합니다. 최신 기술 스택과 창의적인 접근으로 고객의 비즈니스 가치를 극대화합니다.",
-            "p2": "우리는 단순한 웹사이트가 아닌, 사용자 경험을 혁신하고 비즈니스 성장을 이끄는 디지털 솔루션을 만듭니다. AI 기반 플랫폼 프론트엔드 개발, APM, 매크로 탐지/방지 솔루션, 그리고 다양한 엔터프라이즈 솔루션 개발에 특화되어 있습니다.",
+            "subtitle": "웹/앱 개발과 AI 보안의 미래를 개척합니다",
+            "p1": "LEVELTHREE는 웹/앱 및 AI 보안 솔루션 전문 회사로, AI 시대의 혁신적인 디지털 경험을 제공합니다. 최신 기술 스택과 창의적인 접근으로 고객의 비즈니스 가치를 극대화합니다.",
+            "p2": "우리는 단순한 웹사이트가 아닌, 사용자 경험을 혁신하고 비즈니스 성장을 이끄는 디지털 솔루션을 만듭니다. AI 기반 플랫폼 및 서비스 개발, APM, 매크로 탐지/방지 솔루션, 그리고 다양한 엔터프라이즈 솔루션 개발에 특화되어 있습니다.",
             "stats": {
                 "years": "년의 경험",
                 "projects": "프로젝트 완료",
@@ -29,16 +29,16 @@
         },
         "services": {
             "title": "제공 서비스",
-            "subtitle": "AI 시대에 맞는 혁신적인 프론트엔드 솔루션을 제공합니다",
+            "subtitle": "AI 시대에 맞는 혁신적인 웹/앱 및 보안 솔루션을 제공합니다",
             "items": {
                 "ai": {
-                    "title": "AI Platform Frontend",
-                    "description": "AI 기반 플랫폼의 프론트엔드 개발 전문 서비스입니다. 최신 AI 기술을 활용한 인터랙티브하고 지능적인 사용자 인터페이스를 구축합니다.",
+                    "title": "AI Platform & Service",
+                    "description": "AI 기반 플랫폼 및 서비스 개발 전문입니다. 최신 AI 기술을 활용한 인터랙티브하고 지능적인 사용자 경험을 구축합니다.",
                     "features": [
                         "AI 기반 UI/UX",
                         "실시간 AI 상호작용",
                         "대규모 데이터 시각화",
-                        "고성능 프론트엔드"
+                        "고성능 웹/앱 아키텍처"
                     ]
                 },
                 "security": {
@@ -96,7 +96,7 @@
             "frameworks_title": "Frameworks & Tools",
             "frameworks": [
                 {
-                    "name": "Modern FE Architecture",
+                    "name": "Modern Web/App Architecture",
                     "description": "React, Vue 등 모던 프레임워크 기반의 고성능 아키텍처 설계"
                 },
                 {
@@ -133,7 +133,7 @@
                 },
                 {
                     "name": "n8n & Workflow",
-                    "description": "AI 시대의 Agile한 FE/BE 데이터 파이프라인 연동"
+                    "description": "AI 시대의 Agile Full-stack 데이터 파이프라인 연동"
                 },
                 {
                     "name": "AI-Native Ops",

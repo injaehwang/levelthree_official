@@ -9,17 +9,17 @@
             "contact": "Contact"
         },
         "hero": {
-            "subtitle": "Frontend Development Experts",
-            "description": "Elevating digital experiences with next-generation web technologies.<br/>Specializing in AI Platforms, APM, and Advanced Solutions.",
+            "subtitle": "Web/App & AI Security Experts",
+            "description": "Elevating digital experiences with next-generation technologies.<br/>Specializing in AI Platforms, APM, and Security Solutions.",
             "cta_start": "Start a Project",
             "cta_explore": "Explore Services",
             "scroll": "Scroll"
         },
         "about": {
             "title": "About LEVELTHREE",
-            "subtitle": "Pioneering the Future of Frontend",
-            "p1": "LEVELTHREE is a specialized frontend development company providing innovative web solutions for the AI era. We maximize business value through the latest tech stacks and creative approaches.",
-            "p2": "We create digital solutions that innovate user experience and drive business growth, not just simple websites. We specialize in AI platform frontend development, APM, macro detection/prevention solutions, and various enterprise solutions.",
+            "subtitle": "Pioneering Web/App & AI Security",
+            "p1": "LEVELTHREE is a specialized Web/App & AI Security company providing innovative solutions for the AI era. We maximize business value through the latest tech stacks and creative approaches.",
+            "p2": "We create digital solutions that innovate user experience and drive business growth, not just simple websites. We specialize in AI platform & service development, APM, macro detection/prevention solutions, and various enterprise solutions.",
             "stats": {
                 "years": "Years Experience",
                 "projects": "Projects Delivered",
@@ -29,16 +29,16 @@
         },
         "services": {
             "title": "Our Services",
-            "subtitle": "Providing innovative frontend solutions for the AI era",
+            "subtitle": "Providing innovative web/app & security solutions for the AI era",
             "items": {
                 "ai": {
-                    "title": "AI Platform Frontend",
-                    "description": "Specialized frontend development service for AI-based platforms. We build interactive and intelligent user interfaces utilizing the latest AI technologies.",
+                    "title": "AI Platform & Service",
+                    "description": "Specialized web/app development service for AI-based platforms. We build interactive and intelligent user experiences utilizing the latest AI technologies.",
                     "features": [
                         "AI-based UI/UX",
                         "Real-time AI Interaction",
                         "Large-scale Data Visualization",
-                        "High-performance Frontend"
+                        "High-performance Web/App"
                     ]
                 },
                 "security": {
@@ -96,7 +96,7 @@
             "frameworks_title": "Frameworks & Tools",
             "frameworks": [
                 {
-                    "name": "Modern FE Architecture",
+                    "name": "Modern Web/App Architecture",
                     "description": "High-performance architecture based on modern frameworks like React, Vue"
                 },
                 {
@@ -133,7 +133,7 @@
                 },
                 {
                     "name": "n8n & Workflow",
-                    "description": "Agile FE/BE data pipeline integration for the AI era"
+                    "description": "Agile Full-stack data pipeline integration for the AI era"
                 },
                 {
                     "name": "AI-Native Ops",
