@@ -36,8 +36,8 @@ const InteractiveBackground = () => {
                 this.vy = (Math.random() - 0.5) * 0.5
 
                 this.size = Math.random() * 2 + 1
-                // Very subtle color: faint blue-gray
-                this.color = `rgba(150, 160, 180, ${Math.random() * 0.1 + 0.05})`
+                // Purple tint: rgba(124, 58, 237, alpha)
+                this.color = `rgba(124, 58, 237, ${Math.random() * 0.15 + 0.05})`
             }
 
             draw() {
@@ -96,8 +96,8 @@ const InteractiveBackground = () => {
 
                     if (distance < connectionDistance) {
                         const opacityValue = 1 - (distance / connectionDistance)
-                        // Very faint connection lines
-                        ctx.strokeStyle = `rgba(150, 160, 180, ${opacityValue * 0.1})`
+                        // Faint purple connection lines
+                        ctx.strokeStyle = `rgba(139, 92, 246, ${opacityValue * 0.15})`
                         ctx.lineWidth = 1
                         ctx.beginPath()
                         ctx.moveTo(particles[a].x, particles[a].y)

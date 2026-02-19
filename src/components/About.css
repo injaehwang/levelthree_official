@@ -42,7 +42,7 @@
 .stat-number {
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--primary-accent);
   line-height: 1;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
