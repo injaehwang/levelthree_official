@@ -17,7 +17,7 @@ function App() {
       <Helmet>
         <html lang={i18n.language} />
         <title>LEVELTHREE - Web/App & AI Security Experts</title>
-        <meta name="description" content={i18n.language === 'ko' ? "웹/앱 개발 및 서비스 개발, AI 보안 전문가" : "Web/App Development & Service Development, AI Security Experts."} />
+        <meta name="description" content={i18n.language === 'ko' ? "웹/앱 개발 및 서비스 개발, AI 보안 전문" : "Web/App Development & Service Development, AI Security Experts."} />
       </Helmet>
       <InteractiveBackground />
       <Navigation />

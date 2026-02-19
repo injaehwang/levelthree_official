@@ -26,7 +26,9 @@
 }
 
 .service-card:hover {
-  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 113, 227, 0.15);
+  border: 1px solid rgba(0, 113, 227, 0.2);
 }
 
 .service-icon-wrapper {

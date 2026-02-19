@@ -41,7 +41,10 @@
 }
 
 .value-card:hover {
-  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(152, 87, 211, 0.15);
+  /* Purple tint */
+  border: 1px solid rgba(152, 87, 211, 0.2);
 }
 
 .value-icon {

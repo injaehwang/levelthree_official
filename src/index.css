@@ -33,6 +33,10 @@
   --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
 
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --gradient-primary: linear-gradient(135deg, #0071e3 0%, #9857d3 100%);
+  --gradient-text: linear-gradient(135deg, #111111 30%, #4facfe 100%);
+  --gradient-glow: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.15) 0%, transparent 70%);
 }
 
 html {
