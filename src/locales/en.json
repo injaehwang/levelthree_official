@@ -1,0 +1,166 @@
+{
+    "translation": {
+        "hello": "Hello",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "expertise": "Expertise",
+            "contact": "Contact"
+        },
+        "hero": {
+            "subtitle": "Frontend Development Experts",
+            "description": "Elevating digital experiences with next-generation web technologies.<br/>Specializing in AI Platforms, APM, and Advanced Solutions.",
+            "cta_start": "Start a Project",
+            "cta_explore": "Explore Services",
+            "scroll": "Scroll"
+        },
+        "about": {
+            "title": "About LEVELTHREE",
+            "subtitle": "Pioneering the Future of Frontend",
+            "p1": "LEVELTHREE is a specialized frontend development company providing innovative web solutions for the AI era. We maximize business value through the latest tech stacks and creative approaches.",
+            "p2": "We create digital solutions that innovate user experience and drive business growth, not just simple websites. We specialize in AI platform frontend development, APM, macro detection/prevention solutions, and various enterprise solutions.",
+            "stats": {
+                "years": "Years Experience",
+                "projects": "Projects Delivered",
+                "clients": "Happy Clients",
+                "support": "Support"
+            }
+        },
+        "services": {
+            "title": "Our Services",
+            "subtitle": "Providing innovative frontend solutions for the AI era",
+            "items": {
+                "ai": {
+                    "title": "AI Platform Frontend",
+                    "description": "Specialized frontend development service for AI-based platforms. We build interactive and intelligent user interfaces utilizing the latest AI technologies.",
+                    "features": [
+                        "AI-based UI/UX",
+                        "Real-time AI Interaction",
+                        "Large-scale Data Visualization",
+                        "High-performance Frontend"
+                    ]
+                },
+                "security": {
+                    "title": "Security & APM",
+                    "description": "Security solutions focused on macro/bot detection and real-time threat defense. Protecting web applications with behavioral analysis and Fraud Detection.",
+                    "features": [
+                        "Macro/Bot Detection & Blocking",
+                        "Device Fingerprinting",
+                        "Behavior Analysis & FDS",
+                        "APM Performance Monitoring"
+                    ]
+                },
+                "enterprise": {
+                    "title": "Enterprise Solutions",
+                    "description": "Providing customized solutions for digital transformation. We develop scalable and stable enterprise-grade applications.",
+                    "features": [
+                        "Custom Development",
+                        "Scalability",
+                        "Specialized Solution/Product Development",
+                        "Legacy System Integration"
+                    ]
+                }
+            }
+        },
+        "expertise": {
+            "title": "Expertise",
+            "subtitle": "We design interfaces between AI models and users, providing intelligent experiences that visualize data.",
+            "core_values": "Core Values",
+            "values": [
+                {
+                    "title": "Performance First",
+                    "description": "Maximizing user experience with optimized performance"
+                },
+                {
+                    "title": "AI Integration",
+                    "description": "Innovative solutions seamlessly integrating AI technology"
+                },
+                {
+                    "title": "Security & Protection",
+                    "description": "Robust security via macro detection and bot prevention"
+                },
+                {
+                    "title": "Scalable Architecture",
+                    "description": "Scalable and maintainable architecture design"
+                },
+                {
+                    "title": "User Experience",
+                    "description": "Intuitive and attractive user experience design"
+                },
+                {
+                    "title": "Real-time AI Automation Platform",
+                    "description": "Maximizing development efficiency via CI/CD, testing, and design system integration"
+                }
+            ],
+            "frameworks_title": "Frameworks & Tools",
+            "frameworks": [
+                {
+                    "name": "Modern FE Architecture",
+                    "description": "High-performance architecture based on modern frameworks like React, Vue"
+                },
+                {
+                    "name": "Turbo",
+                    "description": "Monorepo build system"
+                },
+                {
+                    "name": "Next.js",
+                    "description": "Full-stack React framework"
+                },
+                {
+                    "name": "Bot Detection",
+                    "description": "Macro and bot detection system"
+                },
+                {
+                    "name": "Device Fingerprinting",
+                    "description": "Device identification and analysis"
+                },
+                {
+                    "name": "CI/CD & Testing",
+                    "description": "Automated testing and deployment pipeline"
+                },
+                {
+                    "name": "Figma to Code",
+                    "description": "Design-to-development integration and auto-deployment"
+                },
+                {
+                    "name": "Common Modules",
+                    "description": "Common module system and design system setup"
+                },
+                {
+                    "name": "Monorepo Consulting",
+                    "description": "Monorepo strategy consulting for large-scale projects"
+                },
+                {
+                    "name": "n8n & Workflow",
+                    "description": "Agile FE/BE data pipeline integration for the AI era"
+                },
+                {
+                    "name": "AI-Native Ops",
+                    "description": "LLM-based service architecture and automation"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Get In Touch",
+            "subtitle": "Want to discuss a project? Contact us anytime.",
+            "info": {
+                "email": "Email",
+                "location": "Location"
+            },
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message",
+                "name_placeholder": "Seo Dal-mi",
+                "email_placeholder": "dalmi@example.com",
+                "message_placeholder": "Tell us about your project..."
+            },
+            "submit": "Send Message",
+            "alert_success": "Thank you for your message! This is a demo."
+        },
+        "footer": {
+            "copyright": "© 2019 hwang injae copyright"
+        }
+    }
+}

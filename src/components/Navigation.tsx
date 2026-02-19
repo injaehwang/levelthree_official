@@ -1,10 +1,17 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import './Navigation.css'
 
 const Navigation = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'ko' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,11 +30,11 @@ const Navigation = () => {
   }
 
   const navItems = [
-    { id: 'hero', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
-    { id: 'expertise', label: 'Expertise' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'hero', label: t('nav.home') },
+    { id: 'about', label: t('nav.about') },
+    { id: 'services', label: t('nav.services') },
+    { id: 'expertise', label: t('nav.expertise') },
+    { id: 'contact', label: t('nav.contact') },
   ]
 
   return (
@@ -45,18 +52,37 @@ const Navigation = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="nav-links">
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <button
-                className="nav-link"
-                onClick={() => scrollToSection(item.id)}
-              >
-                {item.label}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div className="nav-links-container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+          <ul className="nav-links">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  className="nav-link"
+                  onClick={() => scrollToSection(item.id)}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          <button
+            className="lang-toggle"
+            onClick={toggleLanguage}
+            style={{
+              background: 'transparent',
+              border: '1px solid var(--primary)',
+              color: 'var(--primary)',
+              padding: '0.4rem 0.8rem',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              fontWeight: 500
+            }}
+          >
+            {i18n.language === 'en' ? 'KO' : 'EN'}
+          </button>
+        </div>
 
         {/* Mobile Toggle */}
         <div
@@ -78,7 +104,7 @@ const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             style={{
-              position: 'absolute',
+              position: 'fixed',
               top: '60px',
               left: 0,
               width: '100%',
@@ -102,6 +128,25 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <button
+              className="lang-toggle-mobile"
+              onClick={() => {
+                toggleLanguage();
+                setIsMobileMenuOpen(false);
+              }}
+              style={{
+                background: 'transparent',
+                border: '1px solid var(--primary)',
+                color: 'var(--primary)',
+                padding: '0.6rem 2rem',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '1.1rem',
+                marginTop: '1rem'
+              }}
+            >
+              {i18n.language === 'en' ? '한국어' : 'English'}
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

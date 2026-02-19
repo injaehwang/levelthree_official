@@ -1,31 +1,44 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
+import { Bot, Shield, Rocket } from 'lucide-react'
 import './Services.css'
 
 const Services = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   })
 
+  // Define icon mapping
+  const iconMap = {
+    ai: <Bot size={48} strokeWidth={1.5} />,
+    security: <Shield size={48} strokeWidth={1.5} />,
+    enterprise: <Rocket size={48} strokeWidth={1.5} />
+  }
+
   const services = [
     {
-      title: 'AI Platform Frontend',
-      description: 'AI 기반 플랫폼의 프론트엔드 개발 전문 서비스입니다. 최신 AI 기술을 활용한 인터랙티브하고 지능적인 사용자 인터페이스를 구축합니다.',
-      icon: '🤖',
-      features: ['AI 기반 UI/UX', '실시간 AI 상호작용', '대규모 데이터 시각화', '고성능 프론트엔드'],
+      id: 'ai',
+      title: t('services.items.ai.title'),
+      description: t('services.items.ai.description'),
+      icon: iconMap.ai,
+      features: t('services.items.ai.features', { returnObjects: true }) as string[],
     },
     {
-      title: 'Security & APM',
-      description: '매크로·봇 탐지와 실시간 위협 방어를 핵심으로 한 보안 솔루션입니다. 행동 분석과 Fraud Detection으로 웹 애플리케이션을 보호합니다.',
-      icon: '🛡️',
-      features: ['매크로·봇 탐지·차단', '디바이스 핑거프린팅', '행동 분석·FDS', 'APM 성능 모니터링'],
+      id: 'security',
+      title: t('services.items.security.title'),
+      description: t('services.items.security.description'),
+      icon: iconMap.security,
+      features: t('services.items.security.features', { returnObjects: true }) as string[],
     },
     {
-      title: 'Enterprise Solutions',
-      description: '기업의 디지털 전환을 위한 맞춤형 솔루션을 제공합니다. 확장 가능하고 안정적인 엔터프라이즈급 애플리케이션을 개발합니다.',
-      icon: '🚀',
-      features: ['맞춤형 개발', '확장성', '솔루션/제품 개발 특화', '기존 시스템 연동'],
+      id: 'enterprise',
+      title: t('services.items.enterprise.title'),
+      description: t('services.items.enterprise.description'),
+      icon: iconMap.enterprise,
+      features: t('services.items.enterprise.features', { returnObjects: true }) as string[],
     },
   ]
 
@@ -60,9 +73,9 @@ const Services = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 className="section-title">Our Services</h2>
+          <h2 className="section-title">{t('services.title')}</h2>
           <p className="section-subtitle">
-            AI 시대에 맞는 혁신적인 프론트엔드 솔루션을 제공합니다
+            {t('services.subtitle')}
           </p>
         </motion.div>
 
@@ -103,3 +116,4 @@ const Services = () => {
 }
 
 export default Services
+

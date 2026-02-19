@@ -1,59 +1,57 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
+import {
+  Zap, Bot, Shield, Layers, Sparkles, Workflow,
+  Code, AppWindow, Scan, TestTube, Palette, Package,
+  Settings, Database
+} from 'lucide-react'
 import './Expertise.css'
 
 const Expertise = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   })
 
-  const coreValues = [
-    {
-      title: 'Performance First',
-      description: '최적화된 성능으로 사용자 경험을 극대화합니다',
-      icon: '⚡'
-    },
-    {
-      title: 'AI Integration',
-      description: 'AI 기술을 자연스럽게 통합한 혁신적인 솔루션',
-      icon: '🤖'
-    },
-    {
-      title: 'Security & Protection',
-      description: '매크로 탐지 및 봇 방지를 통한 강력한 보안',
-      icon: '🛡️'
-    },
-    {
-      title: 'Scalable Architecture',
-      description: '확장 가능하고 유지보수 가능한 아키텍처 설계',
-      icon: '🏗️'
-    },
-    {
-      title: 'User Experience',
-      description: '직관적이고 매력적인 사용자 경험 디자인',
-      icon: '✨'
-    },
-    {
-      title: '실시간 AI 자동화 플랫폼 설계',
-      description: 'CI/CD, 테스트, 디자인 시스템 연동을 통한 개발 효율성 극대화',
-      icon: '⚙️'
-    },
-  ]
+  // Core Values Icons
+  const valuesData = t('expertise.values', { returnObjects: true }) as { title: string; description: string }[];
+  const coreIcons = [
+    <Zap size={32} />,       // Performance
+    <Bot size={32} />,       // AI Integration
+    <Shield size={32} />,    // Security
+    <Layers size={32} />,    // Scalable Arch
+    <Sparkles size={32} />,  // UX
+    <Workflow size={32} />   // Real-time AI Platform
+  ];
 
-  const frameworks = [
-    { name: 'Modern FE Architecture', icon: '✨', description: 'React, Vue 등 모던 프레임워크 기반의 고성능 아키텍처 설계' },
-    { name: 'Turbo', icon: '⚡', description: '모노레포 빌드 시스템' },
-    { name: 'Next.js', icon: '▲', description: '풀스택 React 프레임워크' },
-    { name: 'Bot Detection', icon: '🛡️', description: '매크로 및 봇 탐지 시스템' },
-    { name: 'Device Fingerprinting', icon: '🔍', description: '디바이스 식별 및 분석' },
-    { name: 'CI/CD & Testing', icon: '🧪', description: '자동화된 테스트 및 배포 파이프라인 구축' },
-    { name: 'Figma to Code', icon: '🎨', description: '디자인-개발 연동 및 자동 배포 시스템' },
-    { name: 'Common Modules', icon: '📦', description: '공통 모듈 시스템 및 디자인 시스템 구축' },
-    { name: 'Monorepo Consulting', icon: '🏗️', description: '대규모 프로젝트를 위한 모노레포 전략 컨설팅' },
-    { name: 'n8n & Workflow', icon: '🔄', description: 'AI 시대의 Agile한 FE/BE 데이터 파이프라인 연동' },
-    { name: 'AI-Native Ops', icon: '🤖', description: 'LLM 기반 서비스 아키텍처 및 자동화 구현' },
-  ]
+  const coreValues = valuesData.map((data, index) => ({
+    ...data,
+    icon: coreIcons[index]
+  }));
+
+  // Frameworks Icons
+  const frameworksData = t('expertise.frameworks', { returnObjects: true }) as { name: string; description: string }[];
+  const frameworkIcons = [
+    <Code size={24} />,          // Modern FE
+    <Zap size={24} />,           // Turbo
+    <AppWindow size={24} />,     // Next.js (Generic App)
+    <Shield size={24} />,        // Bot Detection
+    <Scan size={24} />,          // Device Fingerprinting
+    <TestTube size={24} />,      // CI/CD
+    <Palette size={24} />,       // Figma
+    <Package size={24} />,       // Common Modules
+    <Settings size={24} />,      // Monorepo Consulting
+    <Workflow size={24} />,      // n8n
+    <Database size={24} />       // AI-Native Ops (Data/Infra)
+  ];
+
+  const frameworks = frameworksData.map((data, index) => ({
+    ...data,
+    icon: frameworkIcons[index]
+  }));
+
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -76,15 +74,15 @@ const Expertise = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title">Expertise</h2>
+          <h2 className="section-title">{t('expertise.title')}</h2>
           <p className="section-subtitle">
-            AI 모델과 사용자 사이의 인터페이스를 설계하고 데이터를 시각화하는 지능형 경험을 제공합니다.
+            {t('expertise.subtitle')}
           </p>
         </motion.div>
 
         <div className="expertise-content">
           <div className="expertise-section">
-            <h3 className="subsection-title">Core Values</h3>
+            <h3 className="subsection-title">{t('expertise.core_values')}</h3>
             <div className="values-grid">
               {coreValues.map((value, index) => (
                 <motion.div
@@ -106,7 +104,7 @@ const Expertise = () => {
           </div>
 
           <div className="expertise-section">
-            <h3 className="subsection-title">Frameworks & Tools</h3>
+            <h3 className="subsection-title">{t('expertise.frameworks_title')}</h3>
             <div className="frameworks-grid">
               {frameworks.map((framework, index) => (
                 <motion.div

@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="105 290 70 85" width="85px" height="85px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
-    <linearGradient id="vGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb"/> 
-      <stop offset="100%" style="stop-color:#9333ea"/>
+    <linearGradient id="layerGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#9333ea" />
     </linearGradient>
   </defs>
-  <g id="object-0">
-    <g id="layer-MC0">
-      <!-- The 'V' Mark -->
-      <path id="path3" d="m 0,0 h -14.361 l -11.696,42.616 h 14.361 z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,133.87827,373.53053)"/>
-      <path id="path4" d="M 0,0 H 14.361 L 26.157,45.649 H 11.795 Z" style="fill:url(#vGradient);fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,135.79813,351.27667)"/>
-    </g>
+  
+  <g transform="translate(0, 10)">
+    <!-- Bottom Layer -->
+    <path d="M50 80 L90 60 L50 40 L10 60 Z" fill="url(#layerGradient)" opacity="0.4" />
+    <!-- Middle Layer -->
+    <path d="M50 60 L90 40 L50 20 L10 40 Z" fill="url(#layerGradient)" opacity="0.7" />
+    <!-- Top Layer -->
+    <path d="M50 40 L90 20 L50 0 L10 20 Z" fill="url(#layerGradient)" />
   </g>
 </svg>

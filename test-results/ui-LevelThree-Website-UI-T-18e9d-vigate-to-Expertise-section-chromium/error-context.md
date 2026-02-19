@@ -1,0 +1,193 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "LEVELTHREE" [ref=e6] [cursor=pointer]:
+        - /url: "#hero"
+        - img "LEVELTHREE" [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - button "Home" [ref=e10] [cursor=pointer]
+        - listitem [ref=e11]:
+          - button "About" [ref=e12] [cursor=pointer]
+        - listitem [ref=e13]:
+          - button "Services" [ref=e14] [cursor=pointer]
+        - listitem [ref=e15]:
+          - button "Expertise" [ref=e16] [cursor=pointer]
+        - listitem [ref=e17]:
+          - button "Contact" [ref=e18] [cursor=pointer]
+  - generic [ref=e19]:
+    - generic [ref=e21]:
+      - heading "LEVELTHREE" [level=1] [ref=e22]
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: Frontend Development Experts
+        - paragraph [ref=e25]:
+          - text: Elevating digital experiences with next-generation web technologies.
+          - text: Specializing in AI Platforms, APM, and Advanced Solutions.
+      - generic [ref=e26]:
+        - button "Start a Project" [ref=e27] [cursor=pointer]
+        - button "Explore Services" [ref=e28] [cursor=pointer]
+    - generic [ref=e30]: Scroll
+  - generic [ref=e33]:
+    - generic [ref=e34]:
+      - heading "About LEVELTHREE" [level=2] [ref=e35]
+      - paragraph [ref=e36]: Pioneering the Future of Frontend
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - paragraph [ref=e39]: LEVELTHREE는 프론트엔드 개발 전문 회사로, AI 시대의 혁신적인 웹 솔루션을 제공합니다. 최신 기술 스택과 창의적인 접근으로 고객의 비즈니스 가치를 극대화합니다.
+        - paragraph [ref=e40]: 우리는 단순한 웹사이트가 아닌, 사용자 경험을 혁신하고 비즈니스 성장을 이끄는 디지털 솔루션을 만듭니다. AI 기반 플랫폼 프론트엔드 개발, APM, 매크로 탐지/방지 솔루션, 그리고 다양한 엔터프라이즈 솔루션 개발에 특화되어 있습니다.
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: 10+
+          - generic [ref=e44]: Years Experience
+        - generic [ref=e45]:
+          - generic [ref=e46]: 100+
+          - generic [ref=e47]: Projects Delivered
+        - generic [ref=e48]:
+          - generic [ref=e49]: 50+
+          - generic [ref=e50]: Happy Clients
+        - generic [ref=e51]:
+          - generic [ref=e52]: 24/7
+          - generic [ref=e53]: Support
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - heading "Our Services" [level=2] [ref=e57]
+      - paragraph [ref=e58]: AI 시대에 맞는 혁신적인 프론트엔드 솔루션을 제공합니다
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]: 🤖
+        - heading "AI Platform Frontend" [level=3] [ref=e62]
+        - paragraph [ref=e63]: AI 기반 플랫폼의 프론트엔드 개발 전문 서비스입니다. 최신 AI 기술을 활용한 인터랙티브하고 지능적인 사용자 인터페이스를 구축합니다.
+        - list [ref=e65]:
+          - listitem [ref=e66]: AI 기반 UI/UX
+          - listitem [ref=e68]: 실시간 AI 상호작용
+          - listitem [ref=e70]: 대규모 데이터 시각화
+          - listitem [ref=e72]: 고성능 프론트엔드
+      - generic [ref=e74]:
+        - generic [ref=e75]: 🛡️
+        - heading "Security & APM" [level=3] [ref=e76]
+        - paragraph [ref=e77]: 매크로·봇 탐지와 실시간 위협 방어를 핵심으로 한 보안 솔루션입니다. 행동 분석과 Fraud Detection으로 웹 애플리케이션을 보호합니다.
+        - list [ref=e79]:
+          - listitem [ref=e80]: 매크로·봇 탐지·차단
+          - listitem [ref=e82]: 디바이스 핑거프린팅
+          - listitem [ref=e84]: 행동 분석·FDS
+          - listitem [ref=e86]: APM 성능 모니터링
+      - generic [ref=e88]:
+        - generic [ref=e89]: 🚀
+        - heading "Enterprise Solutions" [level=3] [ref=e90]
+        - paragraph [ref=e91]: 기업의 디지털 전환을 위한 맞춤형 솔루션을 제공합니다. 확장 가능하고 안정적인 엔터프라이즈급 애플리케이션을 개발합니다.
+        - list [ref=e93]:
+          - listitem [ref=e94]: 맞춤형 개발
+          - listitem [ref=e96]: 확장성
+          - listitem [ref=e98]: 솔루션/제품 개발 특화
+          - listitem [ref=e100]: 기존 시스템 연동
+  - generic [ref=e103]:
+    - generic [ref=e104]:
+      - heading "Expertise" [level=2] [ref=e105]
+      - paragraph [ref=e106]: AI 모델과 사용자 사이의 인터페이스를 설계하고 데이터를 시각화하는 지능형 경험을 제공합니다.
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Core Values" [level=3] [ref=e109]
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: ⚡
+            - generic [ref=e113]:
+              - heading "Performance First" [level=4] [ref=e114]
+              - paragraph [ref=e115]: 최적화된 성능으로 사용자 경험을 극대화합니다
+          - generic [ref=e116]:
+            - generic [ref=e117]: 🤖
+            - generic [ref=e118]:
+              - heading "AI Integration" [level=4] [ref=e119]
+              - paragraph [ref=e120]: AI 기술을 자연스럽게 통합한 혁신적인 솔루션
+          - generic [ref=e121]:
+            - generic [ref=e122]: 🛡️
+            - generic [ref=e123]:
+              - heading "Security & Protection" [level=4] [ref=e124]
+              - paragraph [ref=e125]: 매크로 탐지 및 봇 방지를 통한 강력한 보안
+          - generic [ref=e126]:
+            - generic [ref=e127]: 🏗️
+            - generic [ref=e128]:
+              - heading "Scalable Architecture" [level=4] [ref=e129]
+              - paragraph [ref=e130]: 확장 가능하고 유지보수 가능한 아키텍처 설계
+          - generic [ref=e131]:
+            - generic [ref=e132]: ✨
+            - generic [ref=e133]:
+              - heading "User Experience" [level=4] [ref=e134]
+              - paragraph [ref=e135]: 직관적이고 매력적인 사용자 경험 디자인
+          - generic [ref=e136]:
+            - generic [ref=e137]: ⚙️
+            - generic [ref=e138]:
+              - heading "실시간 AI 자동화 플랫폼 설계" [level=4] [ref=e139]
+              - paragraph [ref=e140]: CI/CD, 테스트, 디자인 시스템 연동을 통한 개발 효율성 극대화
+      - generic [ref=e141]:
+        - heading "Frameworks & Tools" [level=3] [ref=e142]
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: ✨
+            - generic [ref=e146]: Modern FE Architecture
+          - generic [ref=e147]:
+            - generic [ref=e148]: ⚡
+            - generic [ref=e149]: Turbo
+          - generic [ref=e150]:
+            - generic [ref=e151]: ▲
+            - generic [ref=e152]: Next.js
+          - generic [ref=e153]:
+            - generic [ref=e154]: 🛡️
+            - generic [ref=e155]: Bot Detection
+          - generic [ref=e156]:
+            - generic [ref=e157]: 🔍
+            - generic [ref=e158]: Device Fingerprinting
+          - generic [ref=e159]:
+            - generic [ref=e160]: 🧪
+            - generic [ref=e161]: CI/CD & Testing
+          - generic [ref=e162]:
+            - generic [ref=e163]: 🎨
+            - generic [ref=e164]: Figma to Code
+          - generic [ref=e165]:
+            - generic [ref=e166]: 📦
+            - generic [ref=e167]: Common Modules
+          - generic [ref=e168]:
+            - generic [ref=e169]: 🏗️
+            - generic [ref=e170]: Monorepo Consulting
+          - generic [ref=e171]:
+            - generic [ref=e172]: 🔄
+            - generic [ref=e173]: n8n & Workflow
+          - generic [ref=e174]:
+            - generic [ref=e175]: 🤖
+            - generic [ref=e176]: AI-Native Ops
+  - generic [ref=e178]:
+    - generic [ref=e179]:
+      - heading "Get In Touch" [level=2] [ref=e180]
+      - paragraph [ref=e181]: 프로젝트에 대해 이야기하고 싶으신가요? 언제든지 연락주세요.
+    - generic [ref=e182]:
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]: 📧
+          - generic [ref=e187]:
+            - heading "Email" [level=4] [ref=e188]
+            - paragraph [ref=e189]: thinkij@levelthree.kr
+        - generic [ref=e190]:
+          - generic [ref=e191]: 📍
+          - generic [ref=e192]:
+            - heading "Location" [level=4] [ref=e193]
+            - paragraph [ref=e194]: Seoul
+      - generic [ref=e196]:
+        - generic [ref=e197]:
+          - generic [ref=e198]: Name
+          - textbox "Name" [ref=e199]:
+            - /placeholder: Seo Dal-mi
+        - generic [ref=e200]:
+          - generic [ref=e201]: Email
+          - textbox "Email" [ref=e202]:
+            - /placeholder: dalmi@example.com
+        - generic [ref=e203]:
+          - generic [ref=e204]: Message
+          - textbox "Message" [ref=e205]:
+            - /placeholder: Tell us about your project...
+        - button "Send Message" [ref=e206] [cursor=pointer]
+    - generic [ref=e208]:
+      - generic [ref=e209]: LEVELTHREE
+      - paragraph [ref=e210]: © 2019 hwang injae copyright
+```

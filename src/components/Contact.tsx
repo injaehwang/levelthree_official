@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
+import { Mail, MapPin } from 'lucide-react'
 import './Contact.css'
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -19,7 +22,7 @@ const Contact = () => {
     e.preventDefault()
     // Handle form submission
     console.log('Form submitted:', formData)
-    alert('Thank you for your message! This is a demo.')
+    alert(t('contact.alert_success'))
     setFormData({ name: '', email: '', message: '' })
   }
 
@@ -31,8 +34,8 @@ const Contact = () => {
   }
 
   const contactInfo = [
-    { icon: '📧', label: 'Email', value: 'thinkij@levelthree.kr' },
-    { icon: '📍', label: 'Location', value: 'Seoul' },
+    { icon: <Mail size={24} />, label: t('contact.info.email'), value: 'thinkij@levelthree.kr' },
+    { icon: <MapPin size={24} />, label: t('contact.info.location'), value: 'Seoul' },
   ]
 
   return (
@@ -44,9 +47,9 @@ const Contact = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">{t('contact.title')}</h2>
           <p className="section-subtitle">
-            프로젝트에 대해 이야기하고 싶으신가요? 언제든지 연락주세요.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -78,7 +81,7 @@ const Contact = () => {
           >
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{t('contact.form.name')}</label>
                 <input
                   type="text"
                   id="name"
@@ -86,12 +89,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Seo Dal-mi"
+                  placeholder={t('contact.form.name_placeholder')}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t('contact.form.email')}</label>
                 <input
                   type="email"
                   id="email"
@@ -99,12 +102,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="dalmi@example.com"
+                  placeholder={t('contact.form.email_placeholder')}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t('contact.form.message')}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -112,12 +115,12 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  placeholder="Tell us about your project..."
+                  placeholder={t('contact.form.message_placeholder')}
                 />
               </div>
 
               <button type="submit" className="btn btn-primary submit-btn">
-                Send Message
+                {t('contact.submit')}
               </button>
             </form>
           </motion.div>
@@ -127,7 +130,7 @@ const Contact = () => {
           <div className="footer-content">
             <span className="footer-logo">LEVELTHREE</span>
             <p className="footer-text">
-              © 2019 hwang injae copyright
+              {t('footer.copyright')}
             </p>
           </div>
         </footer>

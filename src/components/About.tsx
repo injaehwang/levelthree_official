@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
 import './About.css'
 
 const About = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -31,10 +33,10 @@ const About = () => {
   }
 
   const stats = [
-    { number: '10+', label: 'Years Experience' },
-    { number: '100+', label: 'Projects Delivered' },
-    { number: '50+', label: 'Happy Clients' },
-    { number: '24/7', label: 'Support' },
+    { number: '10+', label: t('about.stats.years') },
+    { number: '100+', label: t('about.stats.projects') },
+    { number: '50+', label: t('about.stats.clients') },
+    { number: '24/7', label: t('about.stats.support') },
   ]
 
   return (
@@ -48,23 +50,20 @@ const About = () => {
         >
           <div className="about-header">
             <motion.h2 className="section-title" variants={itemVariants}>
-              About LEVELTHREE
+              {t('about.title')}
             </motion.h2>
             <motion.p className="section-subtitle about-subtitle" variants={itemVariants}>
-              Pioneering the Future of Frontend
+              {t('about.subtitle')}
             </motion.p>
           </div>
 
           <div className="about-main-content">
             <motion.div className="about-text" variants={itemVariants}>
               <p>
-                LEVELTHREE는 프론트엔드 개발 전문 회사로, AI 시대의 혁신적인 웹 솔루션을 제공합니다.
-                최신 기술 스택과 창의적인 접근으로 고객의 비즈니스 가치를 극대화합니다.
+                {t('about.p1')}
               </p>
               <p>
-                우리는 단순한 웹사이트가 아닌, 사용자 경험을 혁신하고 비즈니스 성장을 이끄는
-                디지털 솔루션을 만듭니다. AI 기반 플랫폼 프론트엔드 개발, APM, 매크로 탐지/방지 솔루션,
-                그리고 다양한 엔터프라이즈 솔루션 개발에 특화되어 있습니다.
+                {t('about.p2')}
               </p>
             </motion.div>
 
