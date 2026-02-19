@@ -36,8 +36,10 @@ const InteractiveBackground = () => {
                 this.vy = (Math.random() - 0.5) * 0.5
 
                 this.size = Math.random() * 2 + 1
-                // Purple tint: rgba(124, 58, 237, alpha)
-                this.color = `rgba(124, 58, 237, ${Math.random() * 0.15 + 0.05})`
+                // Neon Cyan/Lime tint
+                const isCyan = Math.random() > 0.5;
+                const colorBase = isCyan ? '0, 240, 255' : '176, 251, 93';
+                this.color = `rgba(${colorBase}, ${Math.random() * 0.3 + 0.1})`
             }
 
             draw() {
@@ -96,8 +98,8 @@ const InteractiveBackground = () => {
 
                     if (distance < connectionDistance) {
                         const opacityValue = 1 - (distance / connectionDistance)
-                        // Faint purple connection lines
-                        ctx.strokeStyle = `rgba(139, 92, 246, ${opacityValue * 0.15})`
+                        // Neon connection lines
+                        ctx.strokeStyle = `rgba(0, 240, 255, ${opacityValue * 0.2})`
                         ctx.lineWidth = 1
                         ctx.beginPath()
                         ctx.moveTo(particles[a].x, particles[a].y)

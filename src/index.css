@@ -54,8 +54,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: transparent;
-  /* Let the sections handle the background color/transparency */
+  background-color: var(--bg-color);
+  /* Deep Black */
   color: var(--text-main);
   overflow-x: hidden;
   line-height: 1.5;

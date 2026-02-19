@@ -65,79 +65,79 @@
         },
         "expertise": {
             "title": "Expertise",
-            "subtitle": "AI 모델과 사용자 사이의 인터페이스를 설계하고 데이터를 시각화하는 지능형 경험을 제공합니다.",
+            "subtitle": "LLM 모델과 사용자 사이의 인터페이스를 설계하고, Agentic Workflow를 시각화하는 지능형 경험을 제공합니다.",
             "core_values": "Core Values",
             "values": [
                 {
-                    "title": "Performance First",
-                    "description": "최적화된 성능으로 사용자 경험을 극대화합니다"
+                    "title": "AI-Native Interface",
+                    "description": "생성형 AI와 사용자를 연결하는 직관적인 대화형 인터페이스 설계"
                 },
                 {
-                    "title": "AI Integration",
-                    "description": "AI 기술을 자연스럽게 통합한 혁신적인 솔루션"
+                    "title": "Agentic Workflow",
+                    "description": "자율 에이전트의 사고 과정과 실행 흐름을 시각화하는 대시보드"
                 },
                 {
-                    "title": "Security & Protection",
-                    "description": "매크로 탐지 및 봇 방지를 통한 강력한 보안"
+                    "title": "LLM Security",
+                    "description": "프롬프트 인젝션 방어 및 AI 모델 보안 가드레일 구축"
                 },
                 {
-                    "title": "Scalable Architecture",
-                    "description": "확장 가능하고 유지보수 가능한 아키텍처 설계"
+                    "title": "Scalable Vector Arch",
+                    "description": "RAG 파이프라인과 벡터 데이터베이스를 위한 고성능 아키텍처"
                 },
                 {
-                    "title": "User Experience",
-                    "description": "직관적이고 매력적인 사용자 경험 디자인"
+                    "title": "Immersive UX",
+                    "description": "데이터의 복잡성을 단순화하는 몰입형 사용자 경험"
                 },
                 {
-                    "title": "실시간 AI 자동화 플랫폼 설계",
-                    "description": "CI/CD, 테스트, 디자인 시스템 연동을 통한 개발 효율성 극대화"
+                    "title": "Real-time AI Ops",
+                    "description": "실시간 추론 모니터링 및 AI 파이프라인 자동화"
                 }
             ],
-            "frameworks_title": "Frameworks & Tools",
+            "frameworks_title": "Tech Stack",
             "frameworks": [
                 {
-                    "name": "Modern Web/App Architecture",
-                    "description": "React, Vue 등 모던 프레임워크 기반의 고성능 아키텍처 설계"
+                    "name": "Next.js & React Server Components",
+                    "description": "AI 스트리밍 응답에 최적화된 서버 사이드 렌더링"
                 },
                 {
-                    "name": "Turbo",
-                    "description": "모노레포 빌드 시스템"
+                    "name": "LangChain & LangGraph",
+                    "description": "복잡한 에이전트 워크플로우 오케스트레이션"
                 },
                 {
-                    "name": "Next.js",
-                    "description": "풀스택 React 프레임워크"
+                    "name": "Vector Databases",
+                    "description": "Pinecone, Milvus 기반의 고속 지식 검색 시스템"
                 },
                 {
-                    "name": "Bot Detection",
-                    "description": "매크로 및 봇 탐지 시스템"
+                    "name": "Vercel AI SDK",
+                    "description": "엣지 런타임 기반의 초저지연 AI 응답 처리"
                 },
                 {
-                    "name": "Device Fingerprinting",
-                    "description": "디바이스 식별 및 분석"
+                    "name": "Prompt Engineering",
+                    "description": "최적화된 시스템 프롬프트 및 컨텍스트 관리"
                 },
                 {
-                    "name": "CI/CD & Testing",
-                    "description": "자동화된 테스트 및 배포 파이프라인 구축"
+                    "name": "Shadcn/UI & Tailwind",
+                    "description": "현대적이고 확장 가능한 AI 애플리케이션 디자인 시스템"
                 },
                 {
-                    "name": "Figma to Code",
-                    "description": "디자인-개발 연동 및 자동 배포 시스템"
+                    "name": "Figma Dev Mode",
+                    "description": "디자인과 개발의 완벽한 일치를 위한 워크플로우"
                 },
                 {
-                    "name": "Common Modules",
-                    "description": "공통 모듈 시스템 및 디자인 시스템 구축"
+                    "name": "Turborepo",
+                    "description": "대규모 AI 애플리케이션을 위한 모노레포 아키텍처"
                 },
                 {
-                    "name": "Monorepo Consulting",
-                    "description": "대규모 프로젝트를 위한 모노레포 전략 컨설팅"
+                    "name": "Automated Testing",
+                    "description": "AI 응답 품질 검증 및 회귀 테스트 자동화"
                 },
                 {
-                    "name": "n8n & Workflow",
-                    "description": "AI 시대의 Agile Full-stack 데이터 파이프라인 연동"
+                    "name": "n8n Automation",
+                    "description": "로우코드 기반의 유연한 워크플로우 통합"
                 },
                 {
-                    "name": "AI-Native Ops",
-                    "description": "LLM 기반 서비스 아키텍처 및 자동화 구현"
+                    "name": "WebGPU & WebGL",
+                    "description": "브라우저 기반의 고성능 데이터 시각화 및 연산"
                 }
             ]
         },

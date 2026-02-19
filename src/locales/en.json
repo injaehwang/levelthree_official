@@ -65,79 +65,79 @@
         },
         "expertise": {
             "title": "Expertise",
-            "subtitle": "We design interfaces between AI models and users, providing intelligent experiences that visualize data.",
+            "subtitle": "We design interfaces between LLMs and users, creating intelligent experiences that visualize Agentic Workflows.",
             "core_values": "Core Values",
             "values": [
                 {
-                    "title": "Performance First",
-                    "description": "Maximizing user experience with optimized performance"
+                    "title": "AI-Native Interface",
+                    "description": "Designing intuitive conversational interfaces connecting GenAI and users"
                 },
                 {
-                    "title": "AI Integration",
-                    "description": "Innovative solutions seamlessly integrating AI technology"
+                    "title": "Agentic Workflow",
+                    "description": "Dashboards visualizing the thought process and execution flow of autonomous agents"
                 },
                 {
-                    "title": "Security & Protection",
-                    "description": "Robust security via macro detection and bot prevention"
+                    "title": "LLM Security",
+                    "description": "Prompt injection defense and AI model security guardrails"
                 },
                 {
-                    "title": "Scalable Architecture",
-                    "description": "Scalable and maintainable architecture design"
+                    "title": "Scalable Vector Arch",
+                    "description": "High-performance architecture for RAG pipelines and Vector DBs"
                 },
                 {
-                    "title": "User Experience",
-                    "description": "Intuitive and attractive user experience design"
+                    "title": "Immersive UX",
+                    "description": "Immersive user experiences that simplify complex data"
                 },
                 {
-                    "title": "Real-time AI Automation Platform",
-                    "description": "Maximizing development efficiency via CI/CD, testing, and design system integration"
+                    "title": "Real-time AI Ops",
+                    "description": "Real-time inference monitoring and AI pipeline automation"
                 }
             ],
-            "frameworks_title": "Frameworks & Tools",
+            "frameworks_title": "Tech Stack",
             "frameworks": [
                 {
-                    "name": "Modern Web/App Architecture",
-                    "description": "High-performance architecture based on modern frameworks like React, Vue"
+                    "name": "Next.js & React Server Components",
+                    "description": "Server-side rendering optimized for AI streaming responses"
                 },
                 {
-                    "name": "Turbo",
-                    "description": "Monorepo build system"
+                    "name": "LangChain & LangGraph",
+                    "description": "Orchestrating complex agentic workflows"
                 },
                 {
-                    "name": "Next.js",
-                    "description": "Full-stack React framework"
+                    "name": "Vector Databases",
+                    "description": "Fast knowledge retrieval systems based on Pinecone/Milvus"
                 },
                 {
-                    "name": "Bot Detection",
-                    "description": "Macro and bot detection system"
+                    "name": "Vercel AI SDK",
+                    "description": "Ultra-low latency AI response processing based on Edge Runtime"
                 },
                 {
-                    "name": "Device Fingerprinting",
-                    "description": "Device identification and analysis"
+                    "name": "Prompt Engineering",
+                    "description": "Optimized system prompts and context management"
                 },
                 {
-                    "name": "CI/CD & Testing",
-                    "description": "Automated testing and deployment pipeline"
+                    "name": "Shadcn/UI & Tailwind",
+                    "description": "Modern and scalable AI application design systems"
                 },
                 {
-                    "name": "Figma to Code",
-                    "description": "Design-to-development integration and auto-deployment"
+                    "name": "Figma Dev Mode",
+                    "description": "Workflow for perfect alignment between design and code"
                 },
                 {
-                    "name": "Common Modules",
-                    "description": "Common module system and design system setup"
+                    "name": "Turborepo",
+                    "description": "Monorepo architecture for large-scale AI applications"
                 },
                 {
-                    "name": "Monorepo Consulting",
-                    "description": "Monorepo strategy consulting for large-scale projects"
+                    "name": "Automated Testing",
+                    "description": "AI response quality verification and regression testing automation"
                 },
                 {
-                    "name": "n8n & Workflow",
-                    "description": "Agile Full-stack data pipeline integration for the AI era"
+                    "name": "n8n Automation",
+                    "description": "Low-code based flexible workflow integration"
                 },
                 {
-                    "name": "AI-Native Ops",
-                    "description": "LLM-based service architecture and automation"
+                    "name": "WebGPU & WebGL",
+                    "description": "Browser-based high-performance data visualization and computation"
                 }
             ]
         },
