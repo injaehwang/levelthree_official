@@ -17,9 +17,13 @@
 .subsection-title {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 2rem;
-  color: var(--text-main);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
+  width: fit-content;
+  margin: 0 auto 2rem;
 }
 
 .values-grid {
@@ -37,18 +41,36 @@
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--card-color);
+  opacity: 0.8;
 }
 
 .value-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(152, 87, 211, 0.15);
-  /* Purple tint */
-  border: 1px solid rgba(152, 87, 211, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px var(--card-shadow);
+  border-color: var(--card-color);
 }
 
 .value-icon {
   font-size: 2rem;
+  color: var(--card-color);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .value-title {

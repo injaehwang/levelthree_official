@@ -26,9 +26,19 @@ const Expertise = () => {
     <Workflow size={32} />   // Real-time AI Platform
   ];
 
+  const cardColors = [
+    { hex: '#0071e3', shadow: 'rgba(0, 113, 227, 0.25)' },   // Performance (Blue)
+    { hex: '#9857d3', shadow: 'rgba(152, 87, 211, 0.25)' },  // AI (Purple)
+    { hex: '#2eb82e', shadow: 'rgba(46, 184, 46, 0.25)' },   // Security (Green)
+    { hex: '#f5a623', shadow: 'rgba(245, 166, 35, 0.25)' },  // Scalable (Orange)
+    { hex: '#ff2d55', shadow: 'rgba(255, 45, 85, 0.25)' },   // UX (Pink)
+    { hex: '#5856d6', shadow: 'rgba(88, 86, 214, 0.25)' }    // Real-time (Indigo)
+  ];
+
   const coreValues = valuesData.map((data, index) => ({
     ...data,
-    icon: coreIcons[index]
+    icon: coreIcons[index],
+    color: cardColors[index]
   }));
 
   // Frameworks Icons
@@ -92,6 +102,10 @@ const Expertise = () => {
                   animate={inView ? 'visible' : 'hidden'}
                   variants={itemVariants}
                   transition={{ delay: index * 0.1 }}
+                  style={{
+                    '--card-color': value.color.hex,
+                    '--card-shadow': value.color.shadow
+                  } as React.CSSProperties}
                 >
                   <div className="value-icon">{value.icon}</div>
                   <div>
