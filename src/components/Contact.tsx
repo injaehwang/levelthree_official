@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import './Contact.css'
 
+const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || ''
+
 const Contact = () => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -15,11 +17,36 @@ const Contact = () => {
     message: '',
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('메시지가 전송되었습니다. 빠른 시일 내에 답변드리겠습니다.')
-    setFormData({ name: '', email: '', message: '' })
+
+    if (!GOOGLE_SCRIPT_URL) {
+      alert('문의 기능이 아직 설정되지 않았습니다.')
+      return
+    }
+
+    setStatus('sending')
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
+      })
+
+      setStatus('success')
+      setFormData({ name: '', email: '', message: '' })
+      setTimeout(() => setStatus('idle'), 4000)
+    } catch {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 4000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -103,6 +130,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="홍길동"
+                  disabled={status === 'sending'}
                 />
               </div>
 
@@ -116,6 +144,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="you@example.com"
+                  disabled={status === 'sending'}
                 />
               </div>
 
@@ -129,12 +158,28 @@ const Contact = () => {
                   required
                   rows={5}
                   placeholder="프로젝트에 대해 알려주세요..."
+                  disabled={status === 'sending'}
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary submit-btn">
-                메시지 보내기
+              <button
+                type="submit"
+                className="btn btn-primary submit-btn"
+                disabled={status === 'sending'}
+              >
+                {status === 'sending' ? '전송 중...' : '메시지 보내기'}
               </button>
+
+              {status === 'success' && (
+                <p className="form-status form-status-success">
+                  메시지가 전송되었습니다. 빠른 시일 내에 답변드리겠습니다.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="form-status form-status-error">
+                  전송에 실패했습니다. 이메일로 직접 연락주세요.
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
