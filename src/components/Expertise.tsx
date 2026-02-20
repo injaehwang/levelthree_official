@@ -29,7 +29,7 @@ const Expertise = () => {
     },
     {
       title: 'Cybersecurity',
-      description: '매크로·봇 탐지, 디바이스 핑거프린팅, FDS 시스템 개발',
+      description: '매크로·봇 탐지, 행동 분석 기반 FDS 시스템 개발',
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>

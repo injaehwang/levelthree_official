@@ -49,7 +49,7 @@ const Services = () => {
       title: 'AI Security Solutions',
       description: 'AI 기반 위협 탐지 및 부정행위 방지 시스템을 구축합니다. 디지털 자산을 실시간으로 보호합니다.',
       Icon: SecurityIcon,
-      features: ['매크로·봇 탐지 및 차단', '디바이스 핑거프린팅', '행동 분석 기반 FDS', '실시간 위협 모니터링'],
+      features: ['매크로·봇 탐지 및 차단', '행동 분석 기반 FDS', '이상 탐지 시스템', '실시간 위협 모니터링'],
     },
     {
       title: 'Solution & Product Dev',
