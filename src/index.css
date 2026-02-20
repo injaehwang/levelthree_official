@@ -5,32 +5,36 @@
 }
 
 :root {
-  /* Light Theme Palette - Apple/Antigravity style */
-  --primary: #111111;
-  /* Deep Black for primary actions/text */
-  --primary-light: #333333;
-  --accent: #0071e3;
-  /* Classic clean blue for links/highlights */
+  /* Light Professional Theme */
+  --bg-white: #ffffff;
+  --bg-light: #f7f8fc;
+  --bg-cool: #eef1f8;
+  --bg-warm: #fafafa;
 
-  /* Make backgrounds semi-transparent to show the interactive background */
-  --bg-color: rgba(255, 255, 255, 0.85);
-  --bg-alt: rgba(245, 245, 247, 0.85);
-  /* Subtle light gray for alternating sections */
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 1);
+  --bg-card-alt: rgba(247, 248, 252, 0.9);
 
-  --text-main: #1d1d1f;
-  /* Almost black */
-  --text-secondary: #86868b;
-  /* Gray text */
-  --text-tertiary: #6e6e73;
+  --border-light: rgba(0, 0, 0, 0.06);
+  --border-medium: rgba(0, 0, 0, 0.10);
+  --border-hover: rgba(37, 99, 235, 0.25);
 
-  --border-light: #d2d2d7;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+
+  --accent-blue: #2563eb;
+  --accent-purple: #7c3aed;
+  --accent-gradient: linear-gradient(135deg, #2563eb, #7c3aed);
 
   --spacing-section: 120px;
   --container-width: 1200px;
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.10);
+  --shadow-accent: 0 4px 20px rgba(37, 99, 235, 0.12);
 
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -45,9 +49,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: transparent;
-  /* Let the sections handle the background color/transparency */
-  color: var(--text-main);
+  background-color: var(--bg-white);
+  color: var(--text-primary);
   overflow-x: hidden;
   line-height: 1.5;
 }
@@ -57,7 +60,7 @@ code {
     monospace;
 }
 
-/* Custom Scrollbar - Minimal */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -67,15 +70,15 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d1d1d1;
+  background: #d1d5db;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b0b0b0;
+  background: #9ca3af;
 }
 
-/* Typography Utilities */
+/* Typography */
 h1,
 h2,
 h3,
@@ -84,7 +87,7 @@ h5,
 h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--text-main);
+  color: var(--text-primary);
 }
 
 .container {
@@ -100,11 +103,12 @@ h6 {
 }
 
 .section-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   text-align: center;
   max-width: 600px;
   margin: 0 auto 4rem;
+  line-height: 1.7;
 }
 
 /* Button Reset & Styles */
@@ -119,31 +123,42 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 32px;
+  padding: 14px 36px;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 980px;
-  /* Pill shape */
   transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background: var(--accent-gradient);
   color: white;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  background-color: black;
-  /* Even darker */
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
 }
 
 .btn-secondary {
-  background-color: var(--bg-alt);
-  color: var(--primary);
+  background: var(--bg-white);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-xs);
 }
 
 .btn-secondary:hover {
-  background-color: #e8e8ed;
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

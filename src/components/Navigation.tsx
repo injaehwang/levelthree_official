@@ -26,7 +26,7 @@ const Navigation = () => {
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
-    { id: 'expertise', label: 'Expertise' },
+    { id: 'expertise', label: 'Technology' },
     { id: 'contact', label: 'Contact' },
   ]
 
@@ -77,27 +77,12 @@ const Navigation = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            style={{
-              position: 'absolute',
-              top: '60px',
-              left: 0,
-              width: '100%',
-              background: 'rgba(255, 255, 255, 0.98)',
-              padding: '2rem',
-              borderBottom: '1px solid var(--border-light)',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1rem',
-              alignItems: 'center',
-              boxShadow: 'var(--shadow-md)'
-            }}
           >
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="nav-link"
-                style={{ fontSize: '1.25rem' }}
+                className="nav-link mobile-nav-link"
               >
                 {item.label}
               </button>

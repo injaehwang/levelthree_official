@@ -17,9 +17,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
     console.log('Form submitted:', formData)
-    alert('Thank you for your message! This is a demo.')
+    alert('메시지가 전송되었습니다. 빠른 시일 내에 답변드리겠습니다.')
     setFormData({ name: '', email: '', message: '' })
   }
 
@@ -31,12 +30,29 @@ const Contact = () => {
   }
 
   const contactInfo = [
-    { icon: '📧', label: 'Email', value: 'thinkij@levelthree.kr' },
-    { icon: '📍', label: 'Location', value: 'Seoul' },
+    {
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+        </svg>
+      ),
+      label: 'Email',
+      value: 'thinkij@levelthree.kr',
+    },
+    {
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+      ),
+      label: 'Location',
+      value: 'Seoul, South Korea',
+    },
   ]
 
   return (
     <section id="contact" className="contact" ref={ref}>
+      <div className="contact-glow"></div>
       <div className="container">
         <motion.div
           className="contact-header"
@@ -78,7 +94,7 @@ const Contact = () => {
           >
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">이름</label>
                 <input
                   type="text"
                   id="name"
@@ -86,12 +102,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Seo Dal-mi"
+                  placeholder="홍길동"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">이메일</label>
                 <input
                   type="email"
                   id="email"
@@ -99,12 +115,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="dalmi@example.com"
+                  placeholder="you@example.com"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">메시지</label>
                 <textarea
                   id="message"
                   name="message"
@@ -112,26 +128,29 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  placeholder="Tell us about your project..."
+                  placeholder="프로젝트에 대해 알려주세요..."
                 />
               </div>
 
               <button type="submit" className="btn btn-primary submit-btn">
-                Send Message
+                메시지 보내기
               </button>
             </form>
           </motion.div>
         </div>
 
-        <footer className="footer">
+      </div>
+
+      <footer className="footer">
+        <div className="container">
           <div className="footer-content">
-            <span className="footer-logo">LEVELTHREE</span>
+            <span className="footer-logo gradient-text">LEVELTHREE</span>
             <p className="footer-text">
-              © 2019 hwang injae copyright
+              &copy; 2019 LEVELTHREE. All rights reserved.
             </p>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </section>
   )
 }

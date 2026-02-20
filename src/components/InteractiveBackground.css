@@ -4,8 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
-    /* Behind BackgroundPattern if we want, or just -1 if BackgroundPattern is 0 */
+    z-index: 0;
     pointer-events: none;
-    /* Let clicks pass through */
+    background-color: transparent;
 }

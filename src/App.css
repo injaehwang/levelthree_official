@@ -1,7 +1,9 @@
 .app {
   position: relative;
+  z-index: 1;
   width: 100%;
   min-height: 100vh;
+  background-color: transparent;
 }
 
 /* Ensure sections take full width but respect container centering handled inside them */
