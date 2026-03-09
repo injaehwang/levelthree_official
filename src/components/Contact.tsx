@@ -190,6 +190,13 @@ const Contact = () => {
         <div className="container">
           <div className="footer-content">
             <span className="footer-logo gradient-text">LEVELTHREE</span>
+            <div className="footer-services">
+              <span className="footer-services-label">보유 서비스</span>
+              <div className="footer-services-links">
+                <a href="https://aientrophy.com" target="_blank" rel="noopener noreferrer">aientrophy.com</a>
+                <a href="https://huskythink.com" target="_blank" rel="noopener noreferrer">huskythink.com</a>
+              </div>
+            </div>
             <p className="footer-text">
               &copy; 2019 LEVELTHREE. All rights reserved.
             </p>
