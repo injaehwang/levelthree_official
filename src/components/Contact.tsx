@@ -198,8 +198,8 @@ const Contact = () => {
             <div className="footer-right">
               <h4 className="footer-heading">Our Service</h4>
               <ul className="footer-service-list">
-                <li><a href="https://aientrophy.com" target="_blank" rel="noopener noreferrer">aientrophy.com</a></li>
-                <li><a href="https://huskythink.com" target="_blank" rel="noopener noreferrer">huskythink.com</a></li>
+                <li><a href="https://aientrophy.com" target="_blank" rel="noopener noreferrer">aientrophy</a></li>
+                <li><a href="https://huskythink.com" target="_blank" rel="noopener noreferrer">huskythink</a></li>
               </ul>
             </div>
           </div>
