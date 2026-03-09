@@ -188,18 +188,20 @@ const Contact = () => {
 
       <footer className="footer">
         <div className="container">
-          <div className="footer-content">
-            <span className="footer-logo gradient-text">LEVELTHREE</span>
-            <div className="footer-services">
-              <span className="footer-services-label">보유 서비스</span>
-              <div className="footer-services-links">
-                <a href="https://aientrophy.com" target="_blank" rel="noopener noreferrer">aientrophy.com</a>
-                <a href="https://huskythink.com" target="_blank" rel="noopener noreferrer">huskythink.com</a>
-              </div>
+          <div className="footer-top">
+            <div className="footer-left">
+              <span className="footer-logo gradient-text">LEVELTHREE</span>
+              <p className="footer-text">
+                &copy; 2019 LEVELTHREE. All rights reserved.
+              </p>
             </div>
-            <p className="footer-text">
-              &copy; 2019 LEVELTHREE. All rights reserved.
-            </p>
+            <div className="footer-right">
+              <h4 className="footer-heading">Our Service</h4>
+              <ul className="footer-service-list">
+                <li><a href="https://aientrophy.com" target="_blank" rel="noopener noreferrer">aientrophy.com</a></li>
+                <li><a href="https://huskythink.com" target="_blank" rel="noopener noreferrer">huskythink.com</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
